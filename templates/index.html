@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SJBrands</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <h2 class="logo">SJBrands 🛒</h2>
+
+<h2>SJBrands 🛒</h2>
+
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/register">Register</a></li>
+<li>
+    <a href="#">
+        🛒 Cart <span id="cart-count">0</span>
+        <button class="btn add-cart">
+    Add to Cart
+</button>
+<button id="dark-mode-btn">🌙</button>
+    </a>
+</li>
+</ul>
+
+</nav>
+    <section class="hero">
+        <h1>Shop Smart, Live Better</h1>
+        <p>Premium Fashion & Electronics</p>
+
+    </section>
+    <div class="search-box">
+        <input type="text" placeholder="Search Products...">
+    </div>
+    <section class="products">
+
+<h2>Featured Products</h2>
+
+<div class="cards">
+
+
+<div class="card">
+<h3>iPhone 15</h3>
+<p>₹79,999</p>
+
+</div>
+
+<div class="card">
+<h3>Gaming Laptop</h3>
+<p>₹59,999</p>
+
+</div>
+
+<div class="card">
+<h3>Headphones</h3>
+
+</div>
+
+</div>
+
+</section>
+    <section class="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="cards">
+
+    <div class="card">
+            <div class="wishlist">❤️</div>  
+        <img src="{{ url_for('static', filename='images/iphone1.jpg') }}">
+        <h3>iPhone 15</h3>
+        <p>₹79,999</p>
+        <div class="rating">
+                ⭐⭐⭐⭐⭐
+        </div>
+        <button class="btn"
+onclick="alert('Product Details Coming Soon 🚀')">
+Buy Now
+</button>
+    
+    </div>
+
+    <div class="card">
+            <div class="wishlist">❤️</div>  
+        <img src="{{ url_for('static', filename='images/gaming-laptop.jpg') }}">
+        <h3>Gaming Laptop</h3>
+        <p>₹59,999</p>
+        <div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn"
+onclick="alert('Product Details Coming Soon 🚀')">
+Buy Now
+</button>
+        
+    </div>
+
+    <div class="card">
+            <div class="wishlist">❤️</div>  
+        <img src="{{ url_for('static', filename='images/Headphones.jpg') }}">
+        <h3>Headphones</h3>
+        <p>₹2,999</p>
+        <div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+<button class="btn"
+onclick="alert('Product Details Coming Soon 🚀')">
+Buy Now
+</button>
+       
+    </div>
+
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 SJBrands. All Rights Reserved.</p>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<footer>
+    <h3>SJBrands</h3>
+    <p>Premium Shopping Experience</p>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+</body>
+
+</html>
